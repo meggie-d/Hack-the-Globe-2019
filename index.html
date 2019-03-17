@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FindMe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="website.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="content">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="font-family: Quicksand; font-weight: 500; font-size: 25px; color: #FFC300; padding-left: 30px">findMe</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <div id="left">
+  <div class="row content">
+    <div class="col-sm-4 sidenav">
+
+
+      <div class="tab">
+      <a class="tablinks" onclick="openTab(event, 'Services')" id="defaultOpen" style="font-family: Open Sans; font-size: 20px; cursor: pointer; color: black; padding-left: 10px; width: 100%">Services</a>
+      <a class="tablinks" onclick="openTab(event, 'Events')" style="font-family: Open Sans; font-size: 20px; cursor: pointer; color: black; width: 100%"> Events</a>
+      </div>
+
+    <div id="Services" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'"></span>
+  
+      <div class="card">
+        <img src="knowledge.png" alt="Avatar" style="width:100%">
+        <div class="container">
+        <h4><b>Service Ontario</b></h4> 
+        <a href"#" style="font-family: Quicksand"><span class= "glyphicon glyphicon-map-marker"></span> Location</a> </br></br>
+        <i class="fa fa-smile-o"></i>  #.#  <i class="fa fa-automobile"></i>  #.#  <i class="fa fa-clock-o"></i>  ##hr  <i class="fa fa-usd"></i> ##.##
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="job.png" alt="Avatar" style="width:100%">
+        <div class="container">
+        <h4><b>PeaceGeeks</b></h4> 
+        <a href"#" style="font-family: Quicksand"><span class= "glyphicon glyphicon-map-marker"></span> Location</a> </br></br>
+        <i class="fa fa-smile-o"></i>  #.#  <i class="fa fa-automobile"></i>  #.#  <i class="fa fa-clock-o"></i>  ##hr  <i class="fa fa-usd"></i> ##.##
+        <p href="#"><span class="glyphicon glyphicon-user"></span> Insert Review Here</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="brainstation.png" alt="Avatar" style="width:100%">
+        <div class="container">
+        <h4><b>Brain Station</b></h4> 
+        <a href="#" style="font-family: Quicksand"><span class= "glyphicon glyphicon-map-marker"></span> Location</a></br></br>
+
+        <i class="fa fa-smile-o"></i>  #.#  <i class="fa fa-automobile"></i>  #.#  <i class="fa fa-clock-o"></i>  ##hr  <i class="fa fa-usd"></i> ##.##
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Events" class="tabcontent">
+      <h4> There are currently no events to display at the time.</h4>
+    </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+  <div id="right">
+    <div class="col-sm-8 text-left"> 
+      <a onclick="myFunction()" style="font-family: Quicksand; font-size: 20px; font-weight: 700; cursor: pointer;color: #560F94">Customize Categories +</a></br>
+
+      <div id="myDIV">
+      <input type="checkbox" name="category" value="Government"> Government Services<br>
+      <input type="checkbox" name="category" value="Education"> Education<br>
+      <input type="checkbox" name="category" value="Employment"> Employment<br>
+      <input type="checkbox" name="category" value="Childcare"> Childcare<br>
+      <input type="checkbox" name="category" value="General"> General Services<br>
+      <input type="checkbox" name="category" value="Cultural"> Cultural<br></br>
+
+      </div>
+      <section id="contact" class="content-section">
+                <div id="map">
+                  <!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11548.046986033041!2d-79.36907205!3d43.64792395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1552786713873" width="850" height="550" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
